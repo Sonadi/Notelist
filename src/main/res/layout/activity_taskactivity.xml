@@ -1,0 +1,146 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Taskactivity"
+    android:background="#A28B55">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/stopwatchDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00:00"
+            android:textSize="40sp"
+            android:layout_gravity="center"
+            android:padding="16dp"
+            android:textColor="@color/whity"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/startStopwatchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/startStopwatchButton"
+                android:layout_marginLeft="40dp"
+                android:backgroundTint="@color/green"/>
+
+            <Button
+                android:id="@+id/stopStopwatchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restart"
+                android:layout_marginLeft="110dp"
+                android:backgroundTint="@color/green"/>
+        </LinearLayout>
+        <!-- Task Name and Description -->
+        <TextView
+            android:id="@+id/taskname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task Name:"
+            style="@style/TextAppearance.AppCompat.Title"/>
+
+        <EditText
+            android:id="@+id/editTaskName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/editTaskName"
+            android:minHeight="48dp"/>
+
+        <TextView
+            android:id="@+id/taskdesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task Description:"
+            style="@style/TextAppearance.AppCompat.Title"/>
+
+        <EditText
+            android:id="@+id/editTaskDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/editTaskDesc"
+            android:minHeight="48dp"/>
+
+        <!-- Date and Time Pickers -->
+        <TextView
+            android:id="@+id/taskDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/taskDate"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/selectDateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/selectDateButton"
+            android:backgroundTint="@color/green"/>
+
+        <TextView
+            android:id="@+id/taskTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/taskTime"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/selectTimeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/selectTimeButton"
+            android:backgroundTint="@color/green"/>
+
+        <TextView
+            android:id="@+id/taskItemName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/taskItemName"
+            android:textSize="16sp"/>
+
+
+
+        <!-- Task List -->
+        <TextView
+            android:id="@+id/taskListTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/taskListTextView"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <ListView
+            android:id="@+id/taskListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Floating Action Button -->
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/newtask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="Add Task"
+            android:backgroundTint="@color/lightgreen"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+</RelativeLayout>

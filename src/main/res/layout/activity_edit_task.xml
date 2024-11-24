@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A28B55">
+
+    <EditText
+        android:id="@+id/editTaskName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Name"/>
+
+    <EditText
+        android:id="@+id/editTaskDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Description"
+        android:layout_below="@id/editTaskName"/>
+
+    <TextView
+        android:id="@+id/editTaskDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date: "
+        android:layout_below="@id/editTaskDesc"/>
+
+    <Button
+        android:id="@+id/selectDateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Date"
+        android:layout_below="@id/editTaskDate"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="@color/green"/>
+
+    <TextView
+        android:id="@+id/editTaskTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time: "
+        android:layout_below="@id/selectDateButton"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:id="@+id/selectTimeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Time"
+        android:layout_below="@id/editTaskTime"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="@color/green"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_below="@id/selectTimeButton"
+        android:layout_marginLeft="160dp"
+        android:backgroundTint="@color/lightgreen"
+        android:textColor="@color/black"/>
+</RelativeLayout>

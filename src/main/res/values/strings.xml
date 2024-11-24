@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">notelist</string>
+    <string name="startStopwatchButton">Start</string>
+    <string name="editTaskName">Enter Task Name</string>
+    <string name="editTaskDesc">Enter Task Description</string>
+    <string name="taskDate">Date:</string>
+    <string name="selectDateButton">Select Date</string>
+    <string name="taskTime">Time:</string>
+    <string name="selectTimeButton">Select Time</string>
+    <string name="taskItemName">Task Name</string>
+    <string name="taskListTextView">Task List:</string>
+</resources>
+
